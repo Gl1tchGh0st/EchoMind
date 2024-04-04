@@ -2,6 +2,7 @@ class colors:
     GREEN = '\033[92m'
     RED = '\033[91m'
     RESET = '\033[0m'
+
 print(f"{colors.GREEN}Script is starting...{colors.RESET}")
 
 # OpenAI API library
@@ -17,7 +18,6 @@ from scipy.io.wavfile import write
 print(f"{colors.GREEN}Initializing OpenAI connection...{colors.RESET}")
 client = OpenAI()
 print(f"{colors.GREEN}OpenAI connection completed.{colors.RESET}")
-
 
 # Save user audio to file
 def userAudio(duration):
